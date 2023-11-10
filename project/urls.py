@@ -16,7 +16,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+
+# the view should receive a request to return a response
+def blog_view_example(request):
+    # you can do whatever you want here, but must return something
+    # the response can be an error or something
+    return HttpResponse('A message for someone important')
+
+def home(request):
+    print('home')
+    return HttpResponse('Home')
+    
 
 urlpatterns = [
+    path('', home),
+    path('blog/', blog_view_example),
     path('admin/', admin.site.urls),
 ]
