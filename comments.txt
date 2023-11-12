@@ -1,0 +1,35 @@
+Web Framework -> have a lot of things that the developer should need to create a website
+created by experienced developers
+All the features that Django has are features that save your time, don't needing to create the tools that every website uses
+
+settings.py -> set all the base configurations, the heart of your project
+
+django database -> most (almost every) time django database is sqlite
+
+HTTP functioning: HTTP Request <-> HTTP Response
+When accessing a site, it is made a request, and the response is the "devolution"
+When you try to access something, the app will search for it inside what was created, and the showed page, error message, etc, is the
+response
+
+Model View Template (MTV) -> Model = data, View = what will do with the data
+The views are the proccess between the user and the server, you should receive a request (that contains
+data) and return a response (this is how HTTP works!). What you'll do or not with the data that are inside the
+requests it's called views
+
+Django works with Apps, so we should create our apps to create a website, and while creating'em, adding
+in settings.py the apps created by you
+If you're creating things that are related between them, it's better to unify them to one single
+application (this recquire a good observation and planning while creating the website).
+Other important point to suggest is: always plan what you're creating, and that's alright if you need to
+restart many times, the great result is the one that recquire the most from you.
+
+apps.py -> your app configuration, this file exists in every django app
+models.py -> where you create your django modules (M from MVT), after this, register it in admin.py file
+in the same folder
+views.py -> create your app views there
+
+
+joining urls -> create urls.py in every app folder, why you should do this? because it's better to avoid
+url repetition while creating apps, for example
+http://domain.com/blog/activites/ -> ./activities/filters/ || ./blog/comments/ || etc
+you can see the example in the urls.py files
