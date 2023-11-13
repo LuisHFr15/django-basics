@@ -33,3 +33,8 @@ joining urls -> create urls.py in every app folder, why you should do this? beca
 url repetition while creating apps, for example
 http://domain.com/blog/activites/ -> ./activities/filters/ || ./blog/comments/ || etc
 you can see the example in the urls.py files
+
+Name Espace -> create the apps names in templates and then create the html files in there
+It is good because it avoids file name conflicts while creating templates
+
+base folder -> the base templates, can be the base of they all, like inheritance in django html files
