@@ -38,3 +38,7 @@ Name Espace -> create the apps names in templates and then create the html files
 It is good because it avoids file name conflicts while creating templates
 
 base folder -> the base templates, can be the base of they all, like inheritance in django html files
+partials -> folder that can contain util parts of django html for your app
+
+static folder -> create static django html files, util for the development, avoiding creating files with
+a huge ammount of lines
